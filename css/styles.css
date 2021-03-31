@@ -12,6 +12,7 @@
   --background-link-text: rgba(255, 255, 255, 0.6);
   --background-main: #e5e5e5;
   --background-second: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 *,
@@ -72,7 +73,8 @@ body {
 .what-we-do,
 .team-list,
 .list-button,
-.list-images {
+.list-images,
+.permanent-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -295,6 +297,48 @@ body {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+
+.permanent-section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.permanent-list {
+  display: flex;
+}
+
+.permanent-item {
+  margin-right: 0;
+
+  border: var(--icon-color) solid 1px;
+  border-radius: 4px;
+}
+
+.permanent-item:not(:last-child) {
+  flex-basis: calc((100% - 6 * 30px) / 6);
+  margin-right: 30px;
+}
+
+.permanent-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+}
+
+.permanent-link:hover .icon,
+.permanent-link:focus .icon {
+  fill: var(--main-interactiv-color);
+  /* box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.permanent-icon:hover {
+  fill: blue;
+  /* box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+/* footer zone */
 
 .footer {
   background-color: var(--backgrount-footer);
