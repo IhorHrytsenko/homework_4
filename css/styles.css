@@ -309,9 +309,6 @@ body {
 
 .permanent-item {
   margin-right: 0;
-
-  border: var(--icon-color) solid 1px;
-  border-radius: 4px;
 }
 
 .permanent-item:not(:last-child) {
@@ -325,17 +322,29 @@ body {
   align-items: center;
   width: 168px;
   height: 88px;
+
+  border: var(--icon-color) solid 1px;
+  border-radius: 4px;
 }
 
-.permanent-link:hover .icon,
-.permanent-link:focus .icon {
-  fill: var(--main-interactiv-color);
-  /* box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
+.permanent-link:hover .permanent-icon,
+.permanent-link:focus .permanent-icon {
+  color: var(--main-interactiv-color);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.permanent-item:hover,
+.permanent-item:focus {
+  color: blue;
+}
+
+.permanent-icon:focus,
 .permanent-icon:hover {
   fill: blue;
-  /* box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+svg:hover {
+  fill: red;
 }
 
 /* footer zone */
