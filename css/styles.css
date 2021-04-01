@@ -83,13 +83,23 @@ body {
 .menu-link:hover,
 .menu-link:focus,
 .address-link:focus,
-.address-link:hover {
+.address-link:hover,
+.address-link:focus .header-icon-mail,
+.address-link:hover .header-icon-mail,
+.address-link:focus .header-icon-smartphone,
+.address-link:hover .header-icon-smartphone {
   color: var(--main-interactiv-color);
+  fill: var(--main-interactiv-color);
 }
 
-.header-icon {
-  width: 20px;
-  height: 20px;
+.header-icon-mail {
+  width: 16px;
+  height: 12px;
+}
+
+.header-icon-smartphone {
+  width: 10px;
+  height: 16px;
 }
 
 .menu-link,
