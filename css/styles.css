@@ -85,6 +85,11 @@ body {
   padding: 0;
 }
 
+.header-icon-mail,
+.header-icon-smartphone {
+  fill: var(--main-text-color);
+}
+
 .menu-link:hover,
 .menu-link:focus,
 .address-link:focus,
@@ -389,6 +394,10 @@ body {
   fill: var(--background-light-text);
 }
 
+.social-item-team + .social-item-team {
+  margin-left: 10px;
+}
+
 .permanent-section {
   padding-bottom: 94px;
   padding-top: 94px;
@@ -478,9 +487,6 @@ body {
   height: 44px;
   background-color: var(--social-icon-color);
   border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .social-item:focus,
